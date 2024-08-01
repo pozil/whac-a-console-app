@@ -1,0 +1,38 @@
+<template>
+    <form class="form-wrapper" action="#">
+        <template for:each={targets} for:item="target">
+            <div
+                key={target.id}
+                class="slds-visual-picker slds-visual-picker_small slds-var-m-around_small"
+            >
+                <input
+                    type="radio"
+                    id={target.id}
+                    value={selection}
+                    name="target"
+                    onchange={handleTargetClick}
+                    data-valid={target.isValid}
+                    disabled={isDisabled}
+                />
+                <label for={target.id}>
+                    <span class={target.containerClasses}>
+                        <span class="slds-is-selected">
+                            <lightning-icon
+                                icon-name={target.selectedIconName}
+                                size="large"
+                                aria-hidden="true"
+                            ></lightning-icon>
+                        </span>
+                        <span class="slds-is-not-selected">
+                            <lightning-icon
+                                icon-name={target.iconName}
+                                size="large"
+                                aria-hidden="true"
+                            ></lightning-icon>
+                        </span>
+                    </span>
+                </label>
+            </div>
+        </template>
+    </form>
+</template>

@@ -1,0 +1,14 @@
+.instructions {
+    max-width: 36rem;
+    margin: auto;
+    text-align: left;
+}
+
+.instructions p {
+    margin-bottom: 0.75rem;
+}
+
+.inline-icon {
+    display: inline-block;
+    padding: 0 0.2rem;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>icon</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description
+    >A fun game of speed and skills that demonstrates how to navigate Console apps with LWC.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>true</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Whac a Console App</label>
+    <navType>Console</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>Whac_a_Console_App_Welcome</tabs>
+    <tabs>Game_Tab</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Whac_a_Console_App_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>Game_Tab</tab>
+        </mappings>
+        <mappings>
+            <tab>Whac_a_Console_App_Welcome</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

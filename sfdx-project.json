@@ -1,0 +1,12 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true
+        }
+    ],
+    "name": "whac-a-console-app",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "61.0"
+}

@@ -1,0 +1,85 @@
+<template>
+    <lightning-card
+        title="Whac a Console App"
+        icon-name="standard:bundle_policy"
+    >
+        <div class="slds-var-m-around_medium slds-text-align_center">
+            <div
+                lwc:if={isConsoleNavigation}
+                class="instructions slds-text-heading_small slds-var-p-bottom_medium"
+            >
+                <p>
+                    This is a fun game of speed and skills that demonstrates how
+                    to navigate Console apps with LWC using the following
+                    capabilities:
+                </p>
+                <ul class="slds-list_dotted slds-var-p-bottom_large">
+                    <li>
+                        <a
+                            href="https://developer.salesforce.com/docs/component-library/bundle/lightning-platform-workspace-api/documentation"
+                            target="_blank"
+                            >Workspace API</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://developer.salesforce.com/docs/component-library/bundle/lightning-platform-utility-bar-api/documentation"
+                            target="_blank"
+                            >Utility Bar API</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://developer.salesforce.com/docs/component-library/bundle/lightning-message-service/documentation"
+                            target="_blank"
+                            >Lightning Message Service</a
+                        >
+                    </li>
+                </ul>
+                <p><b>How to play:</b></p>
+                <ul class="slds-list_dotted">
+                    <li>
+                        hit targets
+                        <lightning-icon
+                            icon-name="utility:campaign"
+                            size="small"
+                            aria-hidden="true"
+                            alternative-text="Target icon"
+                            class="inline-icon"
+                        ></lightning-icon>
+                        as fast as possible to score points.
+                    </li>
+                    <li>
+                        hitting invalid targets such as
+                        <lightning-icon
+                            icon-name="utility:bug"
+                            size="small"
+                            aria-hidden="true"
+                            alternative-text="Bug icon"
+                            class="inline-icon"
+                        ></lightning-icon>
+                        costs you points.
+                    </li>
+                    <li>
+                        waiting for too long before selecting a target costs you
+                        points.
+                    </li>
+                </ul>
+            </div>
+            <p
+                lwc:else
+                class="slds-text-heading_small slds-var-p-bottom_medium"
+            >
+                This game can only be played in a Console app.
+            </p>
+            <div class="slds-var-p-bottom_medium">
+                <lightning-button
+                    disabled={isGameStartReadyDisabled}
+                    onclick={handleGameReadyClick}
+                    label="I'm ready!"
+                    variant="brand"
+                ></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

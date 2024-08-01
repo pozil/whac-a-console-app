@@ -1,0 +1,14 @@
+.slds-visual-picker input:checked ~ label .slds-visual-picker__icon.valid-item {
+    background-color: #3ba755;
+}
+
+.slds-visual-picker
+    input:checked
+    ~ label
+    .slds-visual-picker__icon.invalid-item {
+    background-color: #ea001e;
+}
+
+.slds-visual-picker input:checked ~ label .slds-is-selected lightning-icon {
+    --sds-c-icon-color-foreground-default: #ffffff;
+}
