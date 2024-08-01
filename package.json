@@ -1,10 +1,10 @@
 {
     "name": "whac-a-console-app",
     "private": true,
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Whac a Console App - A fun game to discover how to interact with Console apps",
     "scripts": {
-        "lint": "eslint **/{lwc,aura}/**/*.js",
+        "lint": "eslint **/lwc/**/*.js",
         "test": "npm run test:unit",
         "test:unit": "sfdx-lwc-jest --skipApiVersionCheck",
         "test:unit:watch": "sfdx-lwc-jest --watch --skipApiVersionCheck",
@@ -19,7 +19,7 @@
         "**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}": [
             "prettier --write"
         ],
-        "**/{aura,lwc}/**/*.js": [
+        "**/lwc/**/*.js": [
             "eslint"
         ],
         "**/lwc/**": [
@@ -43,7 +43,7 @@
         "eslint": "^8.57.0",
         "eslint-plugin-import": "^2.29.1",
         "eslint-plugin-jest": "^28.6.0",
-        "husky": "^9.0.11",
+        "husky": "^9.1.4",
         "jest-canvas-mock": "^2.5.2",
         "lint-staged": "^15.2.7",
         "prettier": "^3.3.3",
