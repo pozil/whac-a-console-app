@@ -1,18 +1,27 @@
-# Salesforce DX Project: Next Steps
+# Whac a Console App
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This is a fun game of speed and skills that demonstrates how to navigate Console apps with LWC using the following capabilities:
 
-## How Do You Plan to Deploy Your Changes?
+-   [Workspace AP](https://developer.salesforce.com/docs/component-library/bundle/lightning-platform-workspace-api/documentation)
+-   [Utility Bar API](https://developer.salesforce.com/docs/component-library/bundle/lightning-platform-utility-bar-api/documentation)
+-   [Lightning Message Service](https://developer.salesforce.com/docs/component-library/bundle/lightning-message-service/documentation)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+<img src="screenshots/game-01.png" alt="Game screenshot"/>
 
-## Configure Your Salesforce DX Project
+## Installation
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Install the app by running this script:
 
-## Read All About It
+**MacOS or Linux**
 
--   [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
--   [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
--   [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
--   [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+```
+./install-dev.sh
+```
+
+**Windows**
+
+```
+install-dev.bat
+```
+
+The script automatically opens the game app but you can find it later in the **Whac a Console App**.
