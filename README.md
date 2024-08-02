@@ -2,7 +2,7 @@
 
 This is a fun game of speed and skills that demonstrates how to navigate Console apps with LWC using the following capabilities:
 
--   [Workspace AP](https://developer.salesforce.com/docs/component-library/bundle/lightning-platform-workspace-api/documentation)
+-   [Workspace API](https://developer.salesforce.com/docs/component-library/bundle/lightning-platform-workspace-api/documentation)
 -   [Utility Bar API](https://developer.salesforce.com/docs/component-library/bundle/lightning-platform-utility-bar-api/documentation)
 -   [Lightning Message Service](https://developer.salesforce.com/docs/component-library/bundle/lightning-message-service/documentation)
 
